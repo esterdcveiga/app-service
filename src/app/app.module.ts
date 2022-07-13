@@ -5,16 +5,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { FormsModule } from '@angular/forms';
+import { EdicaoComponent } from './edicao/edicao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    CadastroComponent,
+    EdicaoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule //importando o módulo http client para o projeto
+    HttpClientModule, //importando o módulo http client para o projeto
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,26 @@
+<p>cadastro works!</p>
+
+<form #f="ngForm" (ngSubmit)="saveContato(f.value)">
+    <input type="text" ngModel name="nome" placeholder="informe um nome">
+    
+    <input type="number" ngModel name="idade" placeholder="informe a idade">
+
+    <input type="email" ngModel name="email" placeholder="digita teu email">
+
+    <button>Salvar</button>
+    <label>{{ msg }}</label>
+
+</form>
+
+<!--<table>
+    <tr>
+        <th>nome</th>
+        <th>idade</th>
+        <th>email</th>
+    </tr>
+    <tr *ngFor = "let cont of contatos">
+        <td> {{ cont.nome }} </td>
+        <td> {{ cont.idade }} </td>
+        <td> {{ cont.email }} </td>
+    </tr>
+</table>-->

@@ -6,12 +6,13 @@
         <th>nome</th>
         <th>idade</th>
         <th>email</th>
+        <th>Ações</th>
     </tr>
     <tr *ngFor="let ct of contatos">
         <td>{{ ct.id }}</td>
         <td>{{ ct.nome }}</td>
         <td>{{ ct.idade }}</td>
         <td>{{ ct.email }}</td>
-
+        <td ><a [routerLink]="['/contato', ct.id]">Editar</a></td>
     </tr>
 </table>

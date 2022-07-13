@@ -1,0 +1,21 @@
+<p>edicao works! {{ idContato }}</p>
+
+<!--<form #f="ngForm" (ngSubmit)="saveContato(f.value)">
+    <input type="text" [(ngModel)]="contato.id">
+    <input type="text" [(ngModel)]="contato.id">
+    
+    <input type="number" ngModel name="idade" placeholder="informe a idade">
+
+    <input type="email" ngModel name="email" placeholder="digita teu email">
+
+    <button>Alterar</button>
+    <label>{{ msg }}</label>
+
+//</form>-->
+
+<input type="text" [(ngModel)]="contato.id" readonly>
+<input type="text" [(ngModel)]="contato.nome">
+<input type="number" [(ngModel)]="contato.idade">
+<input type="email" [(ngModel)]="contato.email">
+
+<button (click)="efetivarAlteracao()" >Alterar</button>
