@@ -3,7 +3,14 @@
     {
       "id": 1,
       "nome": "Ester",
+      "idade": 28,
       "email": " esterdcveiga"
+    },
+    {
+      "id": 2,
+      "nome": "Maria Ester",
+      "idade": 28,
+      "email": " maristeh"
     }
   ]
 }

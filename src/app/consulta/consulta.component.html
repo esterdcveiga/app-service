@@ -1,1 +1,17 @@
 <p>consulta works!</p>
+<button (click)="consultarTodos()">Consultar</button>
+<table>
+    <tr>
+        <th>id</th>
+        <th>nome</th>
+        <th>idade</th>
+        <th>email</th>
+    </tr>
+    <tr *ngFor="let ct of contatos">
+        <td>{{ ct.id }}</td>
+        <td>{{ ct.nome }}</td>
+        <td>{{ ct.idade }}</td>
+        <td>{{ ct.email }}</td>
+
+    </tr>
+</table>
