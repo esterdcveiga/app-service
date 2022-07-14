@@ -1,8 +1,16 @@
 <p>cadastro works!</p>
 
+<!--
+    f é uma variável local (o # é utilizado para criar variáveis locas)
+    a variável f faz referência ao formulário
+    como um todo, por isso está associada à diretiva ngForm 
+    o ngSubmit é um evento, que aciona o método que recebe como entrada os valores do formulário através da variável f, quando o botão salvar é clicado
+-->
 <form #f="ngForm" (ngSubmit)="saveContato(f.value)">
+
+    <!--a diretiva ngModel é utilizada para associar cada campo de imput com um campo de valor no formulário-->
     <input type="text" ngModel name="nome" placeholder="informe um nome">
-    
+
     <input type="number" ngModel name="idade" placeholder="informe a idade">
 
     <input type="email" ngModel name="email" placeholder="digita teu email">
