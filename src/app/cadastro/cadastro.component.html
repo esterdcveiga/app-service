@@ -8,15 +8,32 @@
 -->
 <form #f="ngForm" (ngSubmit)="saveContato(f.value)">
 
+
     <!--a diretiva ngModel é utilizada para associar cada campo de imput com um campo de valor no formulário-->
-    <input type="text" ngModel name="nome" placeholder="informe um nome">
+    <input type="text" ngModel name="nome" #n="ngModel" placeholder="informe um nome" required minlength="5"
+        maxlength="12" />
+    <div *ngIf="n.invalid">
+        <div *ngIf="n.errors?.['required']">
+            informa um nome
+        </div>
+        <div *ngIf="n.errors?.['minlength']">
+            tem que ter no mínimo 4 caracteres
+        </div>
+        <div *ngIf="n.errors?.['maxlength']">
+            nome grande demais
+        </div>
+    </div>
 
-    <input type="number" ngModel name="idade" placeholder="informe a idade">
+    <input type="number" ngModel name="idade" #i="ngModel" placeholder="informe a idade" required />
+    <div *ngIf="i.value < 18">
+        precisa ter 18 ou mais
+    </div>
 
-    <input type="email" ngModel name="email" placeholder="digita teu email">
+    <input type="email" ngModel name="email" placeholder="digita teu email" />
 
     <button>Salvar</button>
     <label>{{ msg }}</label>
+    <label>{{n.errors | json}}</label>
 
 </form>
 
