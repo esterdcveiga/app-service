@@ -17,6 +17,7 @@ export class EdicaoComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap
     this.idContato = Number(routeParams.get('idContato'))
 
+    //o retorno de getUmContato é um observable que tem sua resposta assinada pelo subscribe, recebida essa resposta, ela será passada para o paêmetro data, que recebe o resultado da consulta
     this.service.getUmContato(this.idContato).subscribe(data => {
       this.contato = data
       console.log(this.contato)
