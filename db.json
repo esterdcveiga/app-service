@@ -32,7 +32,7 @@
     },
     {
       "nome": "ester",
-      "idade": 9,
+      "idade": 16,
       "email": "esterdcveiga",
       "id": 6
     },
@@ -41,6 +41,12 @@
       "idade": 32,
       "email": "esterdcveiga@gmail.com",
       "id": 7
+    },
+    {
+      "nome": "ester",
+      "idade": 14,
+      "email": "esterdcveiga",
+      "id": 8
     }
   ]
 }
