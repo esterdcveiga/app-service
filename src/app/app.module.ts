@@ -9,6 +9,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormsModule } from '@angular/forms';
 import { EdicaoComponent } from './edicao/edicao.component';
 import { LoginComponent } from './login/login.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { OutroUpperPipe } from './outro-upper.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LoginComponent } from './login/login.component';
     ConsultaComponent,
     CadastroComponent,
     EdicaoComponent,
-    LoginComponent
+    LoginComponent,
+    PipesComponent,
+    OutroUpperPipe
   ],
   imports: [
     BrowserModule,

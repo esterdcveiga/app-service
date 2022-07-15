@@ -5,6 +5,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { EdicaoComponent } from './edicao/edicao.component';
 import { LoginComponent } from './login/login.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'login',
     component:LoginComponent
+  },
+  {
+    path: 'pipes',
+    component: PipesComponent
   }
 ];
 
