@@ -13,46 +13,18 @@
       "email": " maristeh"
     },
     {
-      "nome": "",
-      "idade": "",
-      "email": "",
+      "nome": "maria ",
+      "idade": 24,
+      "email": "esterdcveiga@gmail.com",
+      "senha": "pooioh",
       "id": 3
     },
     {
-      "nome": "ester",
-      "idade": 15,
-      "email": "esterdcveiga@gmail.com",
-      "id": 4
-    },
-    {
       "nome": "",
       "idade": "",
       "email": "",
-      "id": 5
-    },
-    {
-      "nome": "ester",
-      "idade": 16,
-      "email": "esterdcveiga",
-      "id": 6
-    },
-    {
-      "nome": "marimar",
-      "idade": 32,
-      "email": "esterdcveiga@gmail.com",
-      "id": 7
-    },
-    {
-      "nome": "ester",
-      "idade": 14,
-      "email": "esterdcveiga",
-      "id": 8
-    },
-    {
-      "nome": "kk3",
-      "idade": "",
-      "email": "",
-      "id": 9
+      "senha": "",
+      "id": 4
     }
   ]
 }

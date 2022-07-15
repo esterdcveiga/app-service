@@ -10,8 +10,7 @@
 
 
     <!--a diretiva ngModel é utilizada para associar cada campo de imput com um campo de valor no formulário-->
-    <input type="text" ngModel name="nome" #n="ngModel" placeholder="informe um nome" required minlength="5"
-        maxlength="12" />
+    <input type="text" ngModel name="nome" #n="ngModel" placeholder="informe um nome" required minlength="5" maxlength="12" />
     <div *ngIf="n.invalid">
         <div *ngIf="n.errors?.['required']">
             informa um nome
@@ -30,6 +29,8 @@
     </div>
 
     <input type="email" ngModel name="email" placeholder="digita teu email" />
+
+    <input type="password" ngModel name="senha" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
 
     <button>Salvar</button>
     <label>{{ msg }}</label>

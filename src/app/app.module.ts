@@ -8,13 +8,15 @@ import { ConsultaComponent } from './consulta/consulta.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormsModule } from '@angular/forms';
 import { EdicaoComponent } from './edicao/edicao.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConsultaComponent,
     CadastroComponent,
-    EdicaoComponent
+    EdicaoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
