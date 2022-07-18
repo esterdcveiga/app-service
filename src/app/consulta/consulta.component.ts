@@ -7,14 +7,11 @@ import { ContatoService } from '../contato.service';
   styleUrls: ['./consulta.component.css']
 })
 
-export class ConsultaComponent implements OnInit {
+export class ConsultaComponent{
 
   contatos: any = []
 
   constructor(private service:ContatoService) { }
-
-  ngOnInit(): void {
-  }
 
   consultarTodos():void{
     this.service.getContatos().subscribe(data => this.contatos = data)

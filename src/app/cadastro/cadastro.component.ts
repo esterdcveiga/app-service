@@ -7,12 +7,10 @@ import { Icontato } from '../interfaces/Icontato';
   templateUrl: './cadastro.component.html',
   styleUrls: ['./cadastro.component.css']
 })
-export class CadastroComponent implements OnInit {
+export class CadastroComponent {
 
   constructor(private service: ContatoService) { }
 
-  ngOnInit(): void {
-  }
 
   contatos: Icontato[] = []
 
