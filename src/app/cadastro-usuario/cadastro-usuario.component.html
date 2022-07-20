@@ -1,0 +1,11 @@
+<h1>Cadastro de usuários</h1>
+
+<form #f="ngForm" (ngSubmit)="save(f.value)">
+    <input type="text" ngModel name="nome" placeholder="informe um nome " />
+    <input type="email" ngModel name="email" placeholder="informe um email" />
+    <input type="password" ngModel name="senha" />
+    <input type="text" ngModel name="perfil" placeholder="informe o perfil" />
+
+
+    <button>Salvar</button>
+</form>

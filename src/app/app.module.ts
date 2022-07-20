@@ -11,6 +11,7 @@ import { EdicaoComponent } from './edicao/edicao.component';
 import { LoginComponent } from './login/login.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { OutroUpperPipe } from './outro-upper.pipe';
+import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { OutroUpperPipe } from './outro-upper.pipe';
     EdicaoComponent,
     LoginComponent,
     PipesComponent,
-    OutroUpperPipe
+    OutroUpperPipe,
+    CadastroUsuarioComponent
   ],
   imports: [
     BrowserModule,
