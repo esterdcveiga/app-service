@@ -1,1 +1,7 @@
-<p>login works!</p>
+<div>
+    <form #f="ngForm" (ngSubmit)="logar(f.value)">
+        <input type="email" ngModel name="email" placeholder="digite o email">
+        <input type="password" ngModel name="senha" placeholder="digite a senha">
+        <button>Logar</button>
+    </form>
+</div>

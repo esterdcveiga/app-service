@@ -11,4 +11,7 @@ export class UsuarioService {
   save(dados:any){
     return this.http.post('http://localhost:8080/usuarios', dados)
   }
+  logar(dados:any){
+    return this.http.post('http://localhost:8080/usuarios/login', dados)
+  }
 }
