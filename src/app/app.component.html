@@ -4,6 +4,9 @@
   <a routerLink="/pipes">Pipes</a>
   <a routerLink="/usuario">Usuario</a>
   <a routerLink="/login">login</a>
+
+  <!--*ngIf="userLogado.email"-->
+  <button  (click)="logout()">Logout</button>
 </nav>
 
 <router-outlet></router-outlet>

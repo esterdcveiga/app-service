@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { OutroUpperPipe } from './outro-upper.pipe';
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
+import { ErrorsComponent } from './errors/errors.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.co
     LoginComponent,
     PipesComponent,
     OutroUpperPipe,
-    CadastroUsuarioComponent
+    CadastroUsuarioComponent,
+    ErrorsComponent
   ],
   imports: [
     BrowserModule,

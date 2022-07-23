@@ -20,6 +20,7 @@ export class LoginComponent {
       let x = JSON.parse(token)
       localStorage.setItem('userToken', x.token)
       //console.log(x.token)
+      window.location.reload()
     })
     
   }
